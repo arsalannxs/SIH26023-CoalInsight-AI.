@@ -1,0 +1,6 @@
+{
+  "name": "CoalInsight AI",
+  "description": "AI-Powered Geological, Mining & Reporting Platform for CMPDI and Coal India Limited (CIL) subsidiaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

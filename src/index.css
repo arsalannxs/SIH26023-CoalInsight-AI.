@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-midnight: #17263C;
+    --color-copper: #C47A43;
+    --color-mist: #F3F6F8;
+    --color-teal: #278A85;
+    --color-slate: #435164;
+    --color-text-main: #202B38;
+    --color-text-sec: #6B7785;
+    --color-surface: #FFFFFF;
+    --color-border: #DFE5EB;
+    --color-success: #2E805A;
+    --color-warning: #B7791F;
+    --color-error: #C44747;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-mist);
+  }
+
+  code, pre, .tabular-nums, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFE5EB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C47A43;
+}
+
+/* Print Styles for Reports */
+@media print {
+  aside, header, nav, .no-print {
+    display: none !important;
+  }
+  body, main {
+    background: #FFFFFF !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .report-page-break {
+    page-break-before: always;
+  }
+}
